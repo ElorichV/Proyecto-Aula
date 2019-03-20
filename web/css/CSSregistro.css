@@ -1,0 +1,39 @@
+/* css del texto */
+.titulo{
+    font-size: 50px;
+    font-family: 'ABeeZee', sans-serif;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    color: #6F1A26;
+}
+/*centrado*/
+.formulario{
+    padding-left: 30%;
+	padding-top:3%;
+}
+.formulario input, select{
+    border-radius: 6px;
+    font-size: 25px;
+    font-family: 'ABeeZee', sans-serif;
+    padding-left: 5px;
+    padding-right: 16px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    border-color:#6F1A26;
+    border-width: 1px;  
+}
+.submit{
+    background-color: #6F1A26;
+    color: white; 
+    box-shadow: 5px 5px 3px #D6DBCC;
+}
+.submit:hover{
+    opacity:.85;
+    cursor: pointer; 
+    background-color: #6F1A26;
+    color: white; 
+    
+}
+
+.hoberg:active{
+	box-shadow: none;
+}

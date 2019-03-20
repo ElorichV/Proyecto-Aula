@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" href="css/CSSgg.css" rel="stylesheet">
+		<link type="text/css" href="css/CSSregistro.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'>
+		<link rel="icon" type="image/icon" href="img/favicon.ico" />
+        <script src="js/jsm.js"></script>
+    </head>
+    <body>
+         <header>
+            <nav>
+                <ul>
+                    <li><a href="bienvenido.html" class="dib"><img src="img/Logo.png" alt="logito" width="80" height="80"></a><li>
+					<li> &emsp;&emsp;&emsp;<li>
+					<li class="l"><a href="home.html" class="hober"><b>Home</b></a><li>
+					<li> &emsp; &emsp; &emsp;<li>
+                    <li class="l"><a href="productos.html" class="hober"><b>Productos</b></a></li>
+					<li> &emsp; &emsp; &emsp;<li>
+                    <li class="l"><a href="#" class="hober"><b>Promociones</b></a><li>
+					<li> &emsp; &emsp; &emsp; &emsp;&emsp;&emsp; &emsp;<li>
+                    <li><a href="inicio.html" class="hoberg"><b>Inicio</b></a><li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;<li>
+					<li><a href="#" class="c"><img src="img/carrito.png" alt="carrito" width="60" height="40"></a><li>
+                </ul>
+            </nav>
+        </header>
+       
+				
+		<div style="display: table;width: 100%;height: 60%;  ">
+            <div style="float: left; width: 50%; height: 100%; background-color: rgb(246,239,229)">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+	
+				&emsp; &emsp; 
+                <img src="img/registro.png" alt="registro" width="565" height="573">
+            </div>
+            <div style="float: left; width: 50%; height: 100%; ">
+                <br>
+				<br>
+				<br><br>
+				<br>
+				<br><br>
+                <font class="titulo" style="padding-left:30px;">Registro</font>
+
+                <form class="formulario" name="regForm" method="post" action="jsp/registro.jsp">
+                    <input type="text" name="nombre" onkeypress="return sololetras(event)"  placeholder="Nombre" autocomplete="off" required/>
+                    <br>
+                    <br>
+                    <input type="email" name="correo" placeholder="Correo electrónico" required  autocomplete="off" pattern=".+(@).+(.org|.com|.com.mx|.mx)"/>
+                    <br>
+                    <br>
+                    <input type="text" name="calle" placeholder="Calle" autocomplete="off" required/>
+                    <br>
+                    <br>
+                    <input type="text" name="next" size="8" placeholder="N Exterior" autocomplete="off" required/>
+                    &nbsp;
+                    <input type="text" name="nint" size="7" placeholder="N Interior" autocomplete="off"/>
+                    <br>
+                    <br>
+                    <input type="text" name="colonia" placeholder="Colonia" autocomplete="off" required/>
+                    <br>
+                    <br>
+                    <input type="text" name="codigo postal" onkeypress="return soloenteros(event)"  placeholder="Codigo Postal" autocomplete="off" required/>
+                    <br>
+                    <br>
+                    <select name="estado" required onchange="del(estado,delegacion)" >
+                        <option value="0">Selecciona el estado</option>
+                        <option value="1">Ciudad de Mexico</option>
+                        <option value="2">Estado de México</option>
+                        <option value="3">Hidalgo</option>
+                    </select>
+                    <br>
+                    <br> 
+                    <select name="delegacion" required>
+                        <option value="0">Selecciona tu delegacion o municipio</option>
+                    </select>
+                    <br>
+                    <br> 
+                    <input type="text" name="telefono" onkeypress="return soloenteros(event)"  placeholder="Tel Celular" autocomplete="off" required/>
+                    <br>
+                    <br>
+                    <input type="text" name="usser" onkeypress="return sololetras(event)"  placeholder="Usuario" autocomplete="off" required/>
+                    <br>
+                    <br>
+                    <input type="password" name="contrasenia"  placeholder="Contraseña" autocomplete="off" required/>
+                    <br>
+                    <br>
+                    <input type="password" name="contrasenia2"  placeholder="Confirmar contraseña"  autocomplete="off" required/>
+                    <br>
+                    <br>&emsp; &emsp;&emsp; &emsp;&emsp; 
+                    <input class="submit hoberg" type=submit name=ok value="Enviar" >
+                </form>
+            </div>
+			<div style="float:left; width:100%; height:250px; background-color:rgb(111,26,38);">
+			<img src="img/esr.png" height="80" class="esr">
+				<img src="img/vangely.png" width="150" height="60" class="va" >
+				<br>
+				<br>
+				<font class="blanco">
+				© 2016 Vangely S.A.B. de C.V. Todos los Derechos Reservados.
+				</font>
+				<br>
+				<font class="blanco">
+				 Aviso de Privacidad 
+				</font>
+				<br>
+				<img src="img/red2.png" class="reds2" align="right">
+			</div>
+        </div>
+		
+		
+    </body>
+</html>
